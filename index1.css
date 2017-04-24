@@ -1,0 +1,186 @@
+body {
+	background: #eee;
+}
+.main {
+	margin: 0px 0px 0px 0px;
+}
+.golov{
+	background-color:#DAA520;
+	height: 70px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+.sidebar{
+  line-height: 1.444;
+  text-align: left;
+}
+.menu{
+  font-size: 40px;
+  font-family: "FiraSans";
+  color: color: rgb( 100, 100, 100 );
+  position: absolute;
+  left: 10px;
+  top: 200px;
+  text-decoration: none;
+  }
+.link:hover{
+  color: #2E8B57;
+  text-decoration: none;
+}
+.link:visited{
+  color: #8B4513;
+  text-decoration: none;
+}
+.link:activ{
+  color: #9932CC;
+  text-decoration: none;
+}
+h1 {
+	color: #2F4F4F;
+	/*font-family: 'Marck Script', cursive; height:32px;/*Шрифты почему-то не работают.(Брал их в гугл-фонтс)*/
+  font-family: 'Marck Script', cursive; 
+  src: url('Marck Script.woff2') format('woff2'), 
+      /* url('webfont.ttf')  format('truetype'), Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('Marck Script.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+}
+.aboutme {
+  font-size: 22px;
+  font-family: "FiraSans";
+  color: rgb( 100, 100, 100 );
+  line-height: 1.444;
+  text-align: left;
+  position: absolute;
+  left: 900px;
+  top: 55px;
+  width: 700px;
+  height: 200px;  
+}
+.scachat{
+/*text-align: left;*/
+ position: absolute;
+ left: 1200px;
+ top: 900px;
+}
+.button{
+	border: 4px;
+	border-style:solid;
+	color:red;
+	border-radius:40px;
+  padding: 30px;
+  text-align: left;
+  font-size:30px;
+  font-weight:400; 
+  text-decoration: none;
+}
+.download-icon{
+	font:&#10001;
+	margin-right:5px;
+}
+.button:hover{
+  color: #98FB98;
+}
+.I{
+	border-radius:300px;
+	 position: absolute;
+	left: 400px;
+    top: 150px;
+}
+.IS{
+	border-radius:30px;
+	position: absolute;
+	left:50px;
+  top:5px; 
+}
+.user-name{
+	 font-size: 25px;
+  font-family: "FiraSans";
+  color:#7FFFD4;
+  line-height: 1.444;
+  text-align: left;
+  position: absolute;
+  left: 120px;
+  top: 10px;
+}
+.contacts{
+	 font-size: 25px;
+  font-family: "FiraSans";
+  color:#7FFFD4;
+  line-height: 1.444;
+  text-align: left;
+  position: absolute;
+  left: 1400px;
+  top: 10px;
+}
+.Rectangle{
+	background-color:#DAA520;
+	height: 50px;
+	position: absolute;
+	bottom: 0;
+	flex-grow: 0;/*узнать*/
+	width: 100%;
+}
+.exit{
+font-size: 25px;
+position: absolute;
+bottom: -10px;
+left: 20px;
+}
+/* Почему иконки не выстраиваются как надо?((*/
+/*.footer-soc > ul {
+  list-style: none;
+display: inline;
+}
+.footer-soc > ul > li {
+display: inline-block;
+}
+.footer-soc > ul > li.fb{
+  background-image: url(socceti/fc.png);
+  position: absolute;
+  left: 1500px;
+  bottom: 10px;
+ }
+ .footer-soc > ul > li.fb:hover{
+  color: #483D8B;
+}
+.vk{
+ position: absolute;
+  left: 1550px;
+  bottom: 10px;
+ }
+ .footer-soc > ul > li.vk:hover{
+  color: #483D8B;
+}
+.footer-soc > ul > li.tw{
+  background-image: url(socceti/tw.png);
+  position: absolute;
+  left: 1600px;
+  bottom: 10px;
+}
+.footer-soc > ul > li.tw:hover{
+  color: #483D8B;
+}*/
+.footer-right{
+  text-align: right;
+}
+.social-items{
+  display: inline-block;
+  vertical-align: middle;
+}
+.fb{
+  position: absolute;
+  left: 1500px;
+  bottom: -2px;
+}
+.vk{
+ position: absolute;
+  left: 1550px;
+  bottom: -2px;
+ }
+ .tw{
+  position: absolute;
+  left: 1600px;
+  bottom: -2px;
+}
