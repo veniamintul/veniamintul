@@ -1,42 +1,196 @@
-body {
+.body,.html {
 	background: #eee;
+  width:100%;
+  height:100%;
 }
-.main {
-	margin: 0px 0px 0px 0px;
+.body{
+  font-family:'FiraSans',sans-serif;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #646464;
+}
+/*.main {
+	margin: 0 auto;
+  min-width: 960px;
+  position: relative;
+  min-height: 100%;
+  overflow: hidden;
+}*/
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-width: 960px;
+}
+.wrapper:after{
+content: "";
+height: 54px;
+display: block;
 }
 .golov{
-	background-color:#DAA520;
-	height: 70px;
-	position: absolute;
-	top: 0;
+	background-color:#ffffff;
+	height: 80px;
+	/*position: absolute;
+	top: 0;*/
 	width: 100%;
+  top:0;
+  /*margin-bottom: 50px;*/
+}
+.header-left, .header-right{
+  float: left;
+  width: 50%;
+}
+
+.header-right{
+  text-align: right;
+  padding-top: 10px;
+}
+.IS{
+  border:2px solid #eee;
+  border-radius:50%;
+  overflow: hidden;
+  /*position: absolute;
+  left:50px;
+  top:5px; */
+}
+.user-photo{
+  display: inline-block;
+   vertical-align: middle;
+   padding-top: 5px;
+}
+.user-name{
+   font-size: 25px;
+  font-family: "FiraSans";
+  color:#7FFFD4;
+  line-height: 1.444;
+   display: inline-block;
+   vertical-align: middle;
+   margin-left:15px; 
+  /*position: absolute;
+  left: 120px;
+  top: 10px;*/ 
+}
+.contacts{
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "FiraSans";
+  color:#7FFFD4;
+  line-height: 1.444;
+  text-align: left;
+  /*text-decoration: none;*/
+  border-bottom: 3px,dashed blue; 
 }
 .sidebar{
   line-height: 1.444;
-  text-align: left;
+  float: left;
+  width: 220px;
+}
+.about-left,.about-right{
+  float: left;
+}
+.about-left{
+  width: 300px;
+  padding-left:30px;
+}
+.about-photo{
+float: left;
+}
+.I{
+  border-radius:50%;
+  width: 220px;
+  height: 220px;
+  max-width:100%; 
+  max-height:100%;
+  border: 5px solid #fff;
+  display: inline-block;
+  
+   /*position: absolute;
+  left: 400px;
+    top: 150px;*/
 }
 .menu{
-  font-size: 40px;
+  font-size: 12px;
   font-family: "FiraSans";
   color: color: rgb( 100, 100, 100 );
-  position: absolute;
+  /*position: absolute;
   left: 10px;
   top: 200px;
-  text-decoration: none;
+  text-decoration: none;*/
   }
-.link:hover{
+
+/*.none:hover{
   color: #2E8B57;
   text-decoration: none;
+}*/
+.link_border{
+  border-right: 6px solid blue;
 }
-.link:visited{
-  color: #8B4513;
+.link{
+   color: #2E8B57;
   text-decoration: none;
+  border-right: 6px transparent;
+}
+.link:hover{
+  color: red; 
+}
+/*.link:visited{
+  color: #8B4513; */
 }
 .link:activ{
   color: #9932CC;
-  text-decoration: none;
 }
-h1 {
+
+.opit_border{
+  border-right: 6px solid blue;
+}
+.opit{
+   color: #2E8B57;
+  text-decoration: none;
+  border-right: 6px transparent;
+}
+.opit:hover{
+  color: red; 
+}
+/*.opit:visited{
+  color: #8B4513; */
+}
+.opit:activ{
+  color: #9932CC;
+}
+
+.me_border{
+  border-right: 6px solid blue;
+}
+.me{
+   color: #2E8B57;
+  text-decoration: none;
+  border-right: 6px transparent;
+}
+.me:hover{
+  color: red; 
+}
+/*.me:visited{
+  color: #8B4513; */
+}
+.me:activ{
+  color: #9932CC;
+}/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+.about-right{
+  width: 360px;
+  text-align:center; 
+}
+.aboutme {
+  font-size: 22px;
+  font-family: "FiraSans";
+  color: rgb( 100, 100, 100 );
+  line-height: 1.444;
+  text-align: left;
+  height: 300px;
+  width: 400px;
+  overflow: auto;
+  margin-bottom: 40px;
+}
+ .content-title{
 	color: #2F4F4F;
 	/*font-family: 'Marck Script', cursive; height:32px;/*Шрифты почему-то не работают.(Брал их в гугл-фонтс)*/
   font-family: 'Marck Script', cursive; 
@@ -45,34 +199,21 @@ h1 {
        url('Marck Script.woff') format('woff'); 
   font-weight: normal; 
   font-style: normal; 
-}
-.aboutme {
-  font-size: 22px;
-  font-family: "FiraSans";
-  color: rgb( 100, 100, 100 );
-  line-height: 1.444;
-  text-align: left;
-  position: absolute;
-  left: 900px;
-  top: 55px;
-  width: 700px;
-  height: 200px;  
-}
+  }
 .scachat{
-/*text-align: left;*/
- position: absolute;
+text-align: right;
+ padding-top: 350px;
+ padding-right:350px;
+ /*position: absolute;
  left: 1200px;
- top: 900px;
+ top: 900px;*/
 }
 .button{
 	border: 4px;
 	border-style:solid;
 	color:red;
 	border-radius:40px;
-  padding: 30px;
-  text-align: left;
-  font-size:30px;
-  font-weight:400; 
+  padding: 7px 13px; 
   text-decoration: none;
 }
 .download-icon{
@@ -80,107 +221,360 @@ h1 {
 	margin-right:5px;
 }
 .button:hover{
+  background: red;
   color: #98FB98;
 }
-.I{
-	border-radius:300px;
-	 position: absolute;
-	left: 400px;
-    top: 150px;
-}
-.IS{
-	border-radius:30px;
-	position: absolute;
-	left:50px;
-  top:5px; 
-}
-.user-name{
-	 font-size: 25px;
-  font-family: "FiraSans";
-  color:#7FFFD4;
-  line-height: 1.444;
-  text-align: left;
-  position: absolute;
-  left: 120px;
-  top: 10px;
-}
-.contacts{
-	 font-size: 25px;
-  font-family: "FiraSans";
-  color:#7FFFD4;
-  line-height: 1.444;
-  text-align: left;
-  position: absolute;
-  left: 1400px;
-  top: 10px;
-}
+
 .Rectangle{
-	background-color:#DAA520;
+	background-color:#414141;
 	height: 50px;
-	position: absolute;
-	bottom: 0;
-	flex-grow: 0;/*узнать*/
-	width: 100%;
+	/*position: relative;
+  min-width:960px;*/
+  position: absolute;
+  min-width:960px;
+  bottom: 0;
+  width: 100%;
+	
+}
+
+.footer-left,.footer-right{
+  float: left;
+  width: 50%;
+}
+
+.footer-left{
+  padding-top: 5px;
 }
 .exit{
-font-size: 25px;
-position: absolute;
+font-size: 14px;
+font-weight: 300px;
+/*position: absolute;
 bottom: -10px;
-left: 20px;
+left: 20px;*/
 }
-/* Почему иконки не выстраиваются как надо?((*/
-/*.footer-soc > ul {
-  list-style: none;
-display: inline;
-}
-.footer-soc > ul > li {
-display: inline-block;
-}
-.footer-soc > ul > li.fb{
-  background-image: url(socceti/fc.png);
-  position: absolute;
-  left: 1500px;
-  bottom: 10px;
- }
- .footer-soc > ul > li.fb:hover{
-  color: #483D8B;
-}
-.vk{
- position: absolute;
-  left: 1550px;
-  bottom: 10px;
- }
- .footer-soc > ul > li.vk:hover{
-  color: #483D8B;
-}
-.footer-soc > ul > li.tw{
-  background-image: url(socceti/tw.png);
-  position: absolute;
-  left: 1600px;
-  bottom: 10px;
-}
-.footer-soc > ul > li.tw:hover{
-  color: #483D8B;
-}*/
+
 .footer-right{
   text-align: right;
+  /*padding-top:-100px;*/
+  margin-left: 300px;
+  margin-top: -55px;
+  /*padding-right:100px;*/
 }
 .social-items{
   display: inline-block;
   vertical-align: middle;
+  margin-left:10px; 
 }
 .fb{
-  position: absolute;
-  left: 1500px;
-  bottom: -2px;
+  width: 30px;
+  height: 30px;
+  display: block;
 }
 .vk{
- position: absolute;
-  left: 1550px;
-  bottom: -2px;
+  width: 30px;
+  height: 30px;
+  display: block;
  }
  .tw{
-  position: absolute;
-  left: 1600px;
-  bottom: -2px;
+   width: 30px;
+  height: 30px;
+  display: block;
 }
+
+
+
+
+
+
+
+
+
+.opitme-left,.opitme-right{
+  float: left;
+}
+.opitme-left{
+  width: 220px;
+  padding-left:10px;
+}
+.opitme-photo{
+float: left;
+overflow: hidden;
+margin-top: 50px;
+}
+
+.work{
+ /* width: 230px;
+  height: 220px;*/
+  max-width:100%; 
+  max-height:100%;
+  border: 5px solid #fff;
+  display: block;
+  border-radius:60px; 
+}
+.opitme-right{
+  width: 455px;
+  text-align:center; 
+  float: left;
+  margin-left:-70px;
+  margin-top: -10px;
+}
+
+.opitme {
+  font-size: 22px;
+  font-family: "FiraSans";
+  color: rgb( 100, 100, 100 );
+  line-height: 1.444;
+  text-align: left;
+  height: 300px;
+  width: 200px;
+  overflow: auto;
+  margin-bottom: 0px
+}
+
+
+
+/*.opitme_1 {
+  font-size: 22px;
+  font-family: "FiraSans";
+  color: rgb( 100, 100, 100 );
+  line-height: 1.444;
+  text-align: left;
+  height: 300px;
+  width: 400px;
+  overflow: auto;
+  margin-bottom: 0px;}
+   
+           /*не получается спозиционировть правильно((((*/
+
+ .content-title_1{
+  color: #2F4F4F;
+  /*font-family: 'Marck Script', cursive; height:32px;/*Шрифты почему-то не работают.(Брал их в гугл-фонтс)*/
+  font-family: 'Marck Script', cursive; 
+  src: url('Marck Script.woff2') format('woff2'), 
+      /* url('webfont.ttf')  format('truetype'), Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('Marck Script.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+  float: left;
+  margin-top: -10px;
+  margin-left:-200px;
+  }
+  .opit_list{                 /*блоки исезают при удалении*/
+    text-align: right;
+  }
+  .opit_item{
+    border-radius:10px;
+    background-color:#DAA520;
+    width: 300px; 
+    box-sizing: border-box;
+    padding: 20px; 
+    display: inline-block;
+    text-align: left;
+    position: relative;
+    margin-bottom: 25px;
+  }
+  .opit_item:hover{/*почему не работает?*/
+    background: #FF4500;
+  }
+  .opit_item:after,.opit_item:before{
+    content: "";
+    display: block;
+    width: 1px;
+    background: #DAA520;
+    position: absolute;
+    right: 100%;
+    margin-right:24px; 
+  }
+  .opit_item:after{
+top:50%;
+bottom:-23px;
+  }
+  .opit_item:before{
+top:-23px;
+bottom:50%;
+  }
+  .opit_item:first-child:before,.opit_item:last-child:after{
+    display: none;
+  }
+
+  .opit_title{
+    font-size: 21px;
+    color: #5a5a5a;
+    margin-bottom:10px;
+  }
+  .opit_title:hover{ 
+    color: #BDB76B;
+  }
+  .opit_occupashion,.opit_time{
+    font-weight: 300;
+    color:#727272;
+    margin-bottom:10px;
+  }
+  .opit_occupashion:hover,.opit_time{
+    color: #BDB76B; 
+  }
+  .opit_time{
+     margin-bottom:0;
+  }
+  .opit_time:hover{
+   color: #BDB76B; 
+  }
+  .opit_item_year{
+position: absolute;
+top:50%;
+margin-top:-14px; 
+right:100%;
+margin-right:40px; 
+color: #727272;
+font-size: 28px;
+  }
+  .opit_item_year:hover{
+    font-weight: 600;
+  }
+.opit_item_year:before {
+  content:"";
+  display:block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  background:#DAA520; 
+  position: absolute;
+  right: -25px;
+  top:50%; 
+  margin-top: -10px;
+  border: 5px solid #eee;
+}
+
+
+
+
+
+
+
+
+/*.portfolio_22{
+  width: 220px;
+  text-align:center; 
+  /*float: left;
+  margin-left:550px;
+  margin-top: -200px;}*/
+
+.portfolio_list{
+  float: left;
+  margin-left: 10px;
+  margin-top: 20px;
+  /*font-size: 0;*/
+}
+/*.portfolio_list{
+  font-size: 14px;     
+}    для родителя*/
+.portfolio_item{
+  border-radius: 10px;
+  background-color:rgb(255,255,255);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+  width: 220px;
+  overflow: hidden;
+  float: left;
+  margin-left: 25px;
+  margin-bottom: 20px;
+  /*display: inline-block;
+  vertical-align: top;*/
+}
+.portfolio_desc{
+  padding: 20px;
+}
+.portfolio_link{
+  display: block; 
+  text-decoration: none;
+}
+.portfolio_link:hover .portfolio_title {
+  color: #e85f61;
+
+}
+.portfolio_pic-elem{
+  display: block;
+  max-width: 100%
+}
+.portfolio_title{
+  font-size: 21px;
+  color: #414141;
+  margin-bottom: 5px;
+}
+.portfolio_work-desc{
+  font-size: 14px;
+   color: #414141;
+   font-weight: 300;
+   margin-bottom: 15px;
+}
+.portfolio_type-icon, .portfolio_type-title{
+display: inline-block;
+vertical-align: middle;
+}
+.portfolio_type{
+  color: #aeaeae;
+  font-size: 14px;
+}
+.portfolio_type-title{
+  max-width: 170px;
+  margin-left:5px; 
+}
+.portfolio_type-icon{
+  font-size: 18px;
+}
+/*.portfolio_1 {
+  font-size: 22px;
+  font-family: "FiraSans";
+  color: rgb( 100, 100, 100 );
+  line-height: 1.444;
+  text-align: left;
+  height: 300px;
+  width: 400px;
+  overflow: auto;
+  margin-bottom: 0px;
+}*/
+/*.content-title_2{
+  float: left;
+  margin-left:100px;
+  margin-top: 10px;
+}*/
+
+
+
+
+
+
+.content-title_2{
+  color: #2F4F4F;
+  /*font-family: 'Marck Script', cursive; height:32px;/*Шрифты почему-то не работают.(Брал их в гугл-фонтс)*/
+  font-family: 'Marck Script', cursive; 
+  src: url('Marck Script.woff2') format('woff2'), 
+      /* url('webfont.ttf')  format('truetype'), Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('Marck Script.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+  float: left;
+  margin-top: -10px;
+  margin-left:10px;
+  font-size: 22px;
+  text-align: left;
+  height: 30px;
+  width: 200px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
