@@ -1,0 +1,11 @@
+body,.html {
+	background: #eee;
+  width:100%;
+  height:100%;
+}
+body{
+  font-family:'FiraSans',sans-serif;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #646464;
+}
