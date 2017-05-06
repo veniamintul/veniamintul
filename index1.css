@@ -4,7 +4,7 @@ body,html {
   height:100%;
 }
 body{
-  font-family:'FiraSans',sans-serif;
+  font-family:'fira',sans-serif,'FontAwesome';
   font-size: 18px;
   line-height: 1.42;
   color: #646464;
