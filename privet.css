@@ -1,0 +1,116 @@
+body{
+	background: #eee; 
+}
+.wrapper{
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-width: 1200px;
+  min-height: 700px;
+}
+.body_1{
+	background: #eee;
+	position: absolute;
+	top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.body_1:before{
+	content:url(privet.pic/vor.png);
+	display: inline-block;
+	height: 100%;
+	width: 0;
+	vertical-align: middle;
+  margin-left:-430px;
+}
+.body_2{
+	background: #ffffff;
+	height: 300px;
+	width: 300px;
+	display: inline-block;
+	vertical-align: middle;
+  margin-left: 430px;
+}
+.body_2-left,.body_2-right{
+  float: left;
+  width: 100%;
+}
+.body_2-left{
+   float: left;
+    background-size: 100%;
+    overflow: hidden;
+  -webkit-transition: all .5s;
+  -o-transition:all .5s;
+  transition:all  .5s;
+}
+.body_2-left:hover{
+   background-size: 150%;
+}
+
+.pic{
+   display: inline-block;
+   vertical-align: middle;
+   padding-top: 0px;
+   padding-left: 0px;
+    border-radius:50%;
+  width: 140px;
+  height: 140px;
+  max-width:100%;
+  /*background-size: 100%;
+  -webkit-transition: all .5s;
+  -o-transition:all .5s;
+  transition:all  .5s;*/
+  
+}
+/*.pic:hover{
+   background-size: 150%;
+}*/
+.body_2-right{
+   float: right;
+}
+.name{
+display: inline-block;
+vertical-align: middle;
+padding-top: 4px;
+padding-right: 0px;
+color: #2ebde7;
+font-size: 21px;
+}
+.primoug{
+	background-color:#2ebde7;
+	height: 78px;
+	width: 100%;
+	position: relative;
+    bottom:-28px;
+    border-radius: 0 0 7px 7px; 
+  }
+.scachat{
+display: inline-block;
+vertical-align: middle;
+ padding-top: 31px;
+padding-right: 2px;
+}
+.button{
+border: 2px;
+border-style:solid;
+color: #ffffff;
+border-radius:40px;
+  padding: 7px 15px; 
+  font-weight: 12px;
+  text-decoration: none;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;  
+}
+.button__text{
+	display: inline-block;
+  vertical-align: middle;
+}
+.button:hover{
+  background:  #ffffff;
+  color: #2ebde7;
+  border: #ffffff 2px;
+  text-decoration-color:#2ebde7; 
+}

@@ -4,7 +4,13 @@ body,html {
   height:100%;
 }
 body{
-  font-family:'fira',sans-serif,'FontAwesome';
+  font-family:'fira',sans-serif;
+  font-size: 18px;
+  line-height: 1.42;
+  color: #646464;
+}
+body{
+  font-family:'FontAwesome';
   font-size: 18px;
   line-height: 1.42;
   color: #646464;
@@ -20,7 +26,8 @@ body{
   min-height: 100%;
   overflow: hidden;
   position: relative;
-  min-width: 960px;
+  min-width: 1200px;
+  min-height: 700px;
 }
 .wrapper:after{
 content: "";
@@ -56,12 +63,13 @@ display: block;
 .user-photo{
   display: inline-block;
    vertical-align: middle;
-   padding-top: 5px;
+   padding-top: 0px;
+   padding-left: 120px;
 }
 .user-name{
-   font-size: 25px;
+   font-size: 20px;
   font-family: "FiraSans";
-  color:#7FFFD4;
+  color:#747474;
   line-height: 1.444;
    display: inline-block;
    vertical-align: middle;
@@ -71,29 +79,41 @@ display: block;
   top: 10px;*/ 
 }
 .contacts{
-  font-size: 12px;
+  font-size: 20px;
   font-weight: 600;
   font-family: "FiraSans";
-  color:#7FFFD4;
+  color:#2ebde7;
   line-height: 1.444;
   text-align: left;
   /*text-decoration: none;*/
   border-bottom: 3px,dashed blue; 
+  display: inline-block;
+  padding-top: 6px;
+  padding-right: 123px;
+}
+.contacts:hover{
+color: #e85f61;
 }
 .sidebar{
   line-height: 1.444;
   float: left;
-  width: 220px;
+  width: 192px;
+  display: inline-block;
+  padding-top: 5px;
+  padding-left: 89px;
 }
 .about-left,.about-right{
   float: left;
 }
 .about-left{
-  width: 300px;
+  width: 313px;
   padding-left:30px;
 }
 .about-photo{
 float: left;
+display: inline-block;
+padding-top: 14px;
+padding-left: 89px;
 }
 .I{
   border-radius:50%;
@@ -102,36 +122,39 @@ float: left;
   max-width:100%; 
   max-height:100%;
   border: 5px solid #fff;
-  display: inline-block;
-  
    /*position: absolute;
   left: 400px;
     top: 150px;*/
 }
 .menu{
-  font-size: 12px;
+  font-size: 20px;
   font-family: "FiraSans";
   color: color: rgb( 100, 100, 100 );
-  /*position: absolute;
-  left: 10px;
-  top: 200px;
-  text-decoration: none;*/
+  line-height: 9px;
   }
+ .menu_3{
+  width: 214px;
+ }
 
 /*.none:hover{
   color: #2E8B57;
   text-decoration: none;
 }*/
-.link_border{
-  border-right: 6px solid blue;
-}
+
 .link{
-   color: #2E8B57;
+   color: #414141;
   text-decoration: none;
-  border-right: 6px transparent;
+  border-right: 6px  solid transparent;
+   display: block;
+  text-align: right;
+  padding: 10px 25px 10px 0px;
 }
 .link:hover{
-  color: red; 
+  color: #2fc3df; 
+}
+.link_border,.link{
+  border-color:  #2fc2e4;
+  font-weight: 600;
 }
 /*.link:visited{
   color: #8B4513; */
@@ -140,16 +163,20 @@ float: left;
   color: #9932CC;
 }
 
-.opit_border{
-  border-right: 6px solid blue;
-}
 .opit{
-   color: #2E8B57;
+   color: #414141;
   text-decoration: none;
-  border-right: 6px transparent;
+  border-right: 6px solid transparent;
+   display: inline-block;
+  text-align: right;
+  padding: 10px 34px 10px 0px;
 }
 .opit:hover{
-  color: red; 
+  color: #2fc3df; 
+}
+.opit_border,.opit{
+  border-color:  #2fc2e4;
+  font-weight: 600;
 }
 /*.opit:visited{
   color: #8B4513; */
@@ -158,26 +185,40 @@ float: left;
   color: #9932CC;
 }
 
-.me_border{
-  border-right: 6px solid blue;
-}
 .me{
-   color: #2E8B57;
+   color: #414141;
   text-decoration: none;
-  border-right: 6px transparent;
+  border-right: 6px  solid transparent;
+  display: block;
+  text-align: right;
+  padding: 10px 25px 10px 0px;
 }
 .me:hover{
-  color: red; 
+  color: #2fc3df; 
+}
+.me_border,.me{
+  border-color: #2fc2e4;
+  font-weight: 600;
 }
 /*.me:visited{
-  color: #8B4513; */
-}
+  color: #8B4513; }*/
+
 .me:activ{
   color: #9932CC;
-}/*AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA*/
+}
+.meny-icon,.meny-titile{
+  vertical-align: middle;
+  display: inline-block;
+  padding: -1px 0px 0px 0px;
+}
+/*.meny-titile:after{
+  content: '\2603';
+}*/
 .about-right{
-  width: 360px;
-  text-align:center; 
+  width: 360px; 
+  text-align: left;
+padding-left: 60px;
+padding-top: 0px;
 }
 .aboutme {
   font-size: 22px;
@@ -185,7 +226,7 @@ float: left;
   color: rgb( 100, 100, 100 );
   line-height: 1.444;
   text-align: left;
-  height: 300px;
+  height: 420px;
   width: 400px;
   overflow: auto;
   margin-bottom: 40px;
@@ -203,35 +244,43 @@ float: left;
 .scachat{
 text-align: right;
  padding-top: 350px;
- padding-right:350px;
+ padding-right:142px;
  /*position: absolute;
  left: 1200px;
  top: 900px;*/
 }
 .button{
-	border: 4px;
+	border: 2px;
 	border-style:solid;
-	color:red;
+	color: #e85f61;
 	border-radius:40px;
-  padding: 7px 13px; 
+  padding: 7px 15px; 
+  font-weight: 12px;
   text-decoration: none;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;  
 }
-.download-icon{
-	font:&#10001;
-	margin-right:5px;
+.button__text,.button__icon{
+	display: inline-block;
+  vertical-align: middle;
 }
 .button:hover{
-  background: red;
-  color: #98FB98;
+  background:  #e85f61;
+  color: #ffffff;
+  border: #e85f61 2px;
+  text-decoration-color:#ffffff; 
 }
+
+
 
 .Rectangle{
 	background-color:#414141;
-	height: 50px;
+	height: 55px;
 	/*position: relative;
   min-width:960px;*/
   position: absolute;
-  min-width:960px;
+  min-width:1200px;
   bottom: 0;
   width: 100%;
 	
@@ -248,6 +297,9 @@ text-align: right;
 .exit{
 font-size: 14px;
 font-weight: 300px;
+text-align: left;
+margin-bottom: 10px;
+margin-left: 120px;
 /*position: absolute;
 bottom: -10px;
 left: 20px;*/
@@ -255,15 +307,14 @@ left: 20px;*/
 
 .footer-right{
   text-align: right;
-  /*padding-top:-100px;*/
-  margin-left: 300px;
-  margin-top: -55px;
-  /*padding-right:100px;*/
+  margin-left: 461px;
+  margin-top: -63px;
+  
 }
 .social-items{
   display: inline-block;
   vertical-align: middle;
-  margin-left:10px; 
+  margin-left:5px; 
 }
 .fb{
   width: 30px;
@@ -287,19 +338,38 @@ left: 20px;*/
 
 
 
-
+.wrapper_1{
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-width: 1200px;
+  min-height: 754px;
+}
 
 .opitme-left,.opitme-right{
   float: left;
 }
 .opitme-left{
-  width: 220px;
+  width: 331px;
   padding-left:10px;
+}
+.opitme {
+  font-size: 22px;
+  font-family: "FiraSans";
+  color: rgb( 100, 100, 100 );
+  line-height: 1.444;
+  text-align: left;
+  height: 350px;
+  width: 350px;
+  overflow: auto;
+  margin-bottom: 0px
+
 }
 .opitme-photo{
 float: left;
 overflow: hidden;
-margin-top: 50px;
+margin-top: 75px;
+margin-left: 67px;
 }
 
 .work{
@@ -311,26 +381,29 @@ margin-top: 50px;
   display: block;
   border-radius:60px; 
 }
+.content-title_1{
+  color: #2F4F4F;
+  /*font-family: 'Marck Script', cursive; height:32px;/*Шрифты почему-то не работают.(Брал их в гугл-фонтс)*/
+  font-family: 'Marck Script', cursive; 
+  src: url('Marck Script.woff2') format('woff2'), 
+      /* url('webfont.ttf')  format('truetype'), Только если нужна поддержка старых Android, иначе закомментировать */ 
+       url('Marck Script.woff') format('woff'); 
+  font-weight: normal; 
+  font-style: normal; 
+  float: left;
+  text-align: left;
+  margin-top: -294px;
+  margin-left: 70px;
+  }
+
+
 .opitme-right{
   width: 455px;
   text-align:center; 
   float: left;
-  margin-left:-70px;
-  margin-top: -10px;
+  margin-left: -15px;
+  margin-top: 60px;
 }
-
-.opitme {
-  font-size: 22px;
-  font-family: "FiraSans";
-  color: rgb( 100, 100, 100 );
-  line-height: 1.444;
-  text-align: left;
-  height: 300px;
-  width: 200px;
-  overflow: auto;
-  margin-bottom: 0px
-}
-
 
 
 /*.opitme_1 {
@@ -342,30 +415,19 @@ margin-top: 50px;
   height: 300px;
   width: 400px;
   overflow: auto;
-  margin-bottom: 0px;}
+  margin-bottom: 0px;}*/
    
-           /*не получается спозиционировть правильно((((*/
+          
 
- .content-title_1{
-  color: #2F4F4F;
-  /*font-family: 'Marck Script', cursive; height:32px;/*Шрифты почему-то не работают.(Брал их в гугл-фонтс)*/
-  font-family: 'Marck Script', cursive; 
-  src: url('Marck Script.woff2') format('woff2'), 
-      /* url('webfont.ttf')  format('truetype'), Только если нужна поддержка старых Android, иначе закомментировать */ 
-       url('Marck Script.woff') format('woff'); 
-  font-weight: normal; 
-  font-style: normal; 
-  float: left;
-  margin-top: -10px;
-  margin-left:-200px;
-  }
-  .opit_list{                 /*блоки исезают при удалении*/
+
+  .opit_list{               
     text-align: right;
   }
   .opit_item{
     border-radius:10px;
-    background-color:#DAA520;
-    width: 300px; 
+    background-color:#ffffff;
+    width: 380px; 
+    height: 110px;
     box-sizing: border-box;
     padding: 20px; 
     display: inline-block;
@@ -373,14 +435,17 @@ margin-top: 50px;
     position: relative;
     margin-bottom: 25px;
   }
-  .opit_item:hover{/*почему не работает?*/
-    background: #FF4500;
+  .opit_item:hover .opit_item_year:before  {/*почему не работает?*/
+   border-color:#95e1f3;
+  }
+  .opit_item:hover  {/*почему не работает?*/
+    background: #33c2e4;
   }
   .opit_item:after,.opit_item:before{
     content: "";
     display: block;
     width: 1px;
-    background: #DAA520;
+    background: #30c2e4;
     position: absolute;
     right: 100%;
     margin-right:24px; 
@@ -400,7 +465,7 @@ bottom:50%;
   .opit_title{
     font-size: 21px;
     color: #5a5a5a;
-    margin-bottom:10px;
+    margin-bottom:-2px;
   }
   .opit_title:hover{ 
     color: #BDB76B;
@@ -408,7 +473,7 @@ bottom:50%;
   .opit_occupashion,.opit_time{
     font-weight: 300;
     color:#727272;
-    margin-bottom:10px;
+    margin-bottom:2px;
   }
   .opit_occupashion:hover,.opit_time{
     color: #BDB76B; 
@@ -426,9 +491,9 @@ margin-top:-14px;
 right:100%;
 margin-right:40px; 
 color: #727272;
-font-size: 28px;
+font-size: 15px;
   }
-  .opit_item_year:hover{
+  .opit_item_year:hover {
     font-weight: 600;
   }
 .opit_item_year:before {
@@ -437,20 +502,23 @@ font-size: 28px;
   width: 10px;
   height: 10px;
   border-radius: 50%; 
-  background:#DAA520; 
+  background:#30c2e4; 
   position: absolute;
   right: -25px;
   top:50%; 
   margin-top: -10px;
   border: 5px solid #eee;
 }
-
-
-
-
-
-
-
+/*.opit_item_year:before{
+ border: 5px solid #95e1f3;
+}*/
+.wrapper_2{
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+  min-width: 1200px;
+  min-height: 817px;
+}
 
 /*.portfolio_22{
   width: 220px;
@@ -461,8 +529,8 @@ font-size: 28px;
 
 .portfolio_list{
   float: left;
-  margin-left: 10px;
-  margin-top: 20px;
+  margin-left: -270px;
+  margin-top: 80px;
   /*font-size: 0;*/
 }
 /*.portfolio_list{
@@ -475,8 +543,9 @@ font-size: 28px;
   width: 220px;
   overflow: hidden;
   float: left;
-  margin-left: 25px;
+  margin-left: 30px;
   margin-bottom: 20px;
+ 
   /*display: inline-block;
   vertical-align: top;*/
 }
@@ -553,12 +622,13 @@ vertical-align: middle;
   font-weight: normal; 
   font-style: normal; 
   float: left;
-  margin-top: -10px;
-  margin-left:10px;
-  font-size: 22px;
+  margin-top: 9px;
+margin-left: 81px;
+font-size: 32px;
   text-align: left;
   height: 30px;
   width: 200px;
+  
   }
 
 

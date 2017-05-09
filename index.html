@@ -1,16 +1,17 @@
-http://venitul.ru/<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
    <link rel="stylesheet" href="index1.css">
    <link rel="stylesheet" href="stylesheet.css">
    <link rel="stylesheet" href="font-awesome.css">
+   <link rel="stylesheet" href="font-awesome.min.css">
 	<title>Сайт портфолио Тулупова Вениамина</title>
 </head>
   <body class="main">
 <!-- это cложно(((( -->
-<div class="wrapper">
-       <header class="golov">
+<div class="wrapper_1">
+<header class="golov">                                  
           <div class="container">
           <div class="header-left">
               <div class="user">
@@ -23,35 +24,37 @@ http://venitul.ru/<!DOCTYPE html>
                </div>
              </div>
                <div class="header-right">
-               <a class="contacts" href="#">Контакты</a><!--Изменить контакты -->
+               <a class="contacts" href="#">Мои контакты</a><!--Изменить контакты -->
              </div>   
           </div>
        </header>
        <section class="container">
           <div class="container">
              <aside class="sidebar">
-             <nav class="menu">
-      <ul type="none"> 
+               <nav class="menu">
+      <p align="right">
+      <ul class="menu_3" type="none"> 
             <li class="me_border">
-                 <span class="meny-icon">&#10001; 
-                  </span>
-                 <span class="meny-titile"> 
-                 <a class="me" href="about.html">Это я</a>
-                 </span>
+                 <a class="me" href="about.html">
+                   <span class="meny-icon">&#10001; </span>
+                   <span class="meny-titile"> Обо мне</span>
+                 </a>    
             </li>
-            <li class="opit_border">  
-                 <span class="meny-icon">&#9749;</span>
-                 <span class="meny-titile" >
-                  <a class="opit" href="index.html">Опыт</a>
-                  </span> 
+            <li>  
+                  <a class="opit" href="index.html">
+                    <span class="meny-icon">&#9749;</span>
+                    <span class="meny-titile" >Карьерный путь</span>
+                  </a>
             </li>
-            <li class="link_border"> 
-             <span class="meny-icon" >&#9885;</span>
-                  <span class="meny-titile">
-                  <a class="link" href="link.html">Портфолио</a>
-                  </span>
+            <li>       
+              <a class="link" href="link.html">
+                  <span class="meny-icon" >&#9885;</span>
+                  <span class="meny-titile">Портфолио</span>
+               </a>
+                  
             </li>
        </ul> 
+       </p>
        </nav>
              </aside>
 
@@ -67,11 +70,11 @@ http://venitul.ru/<!DOCTYPE html>
                       <img class="work" src="work_1/work.jpg" width="220"; height="220"; alt="работа";>
                    </div>
                    <!--<div class="opitme_1">-->
-                   <h1 class="content-title_1">Опыт</h1>
+                   <h1 class="content-title_1">Карьерный путь</h1>
                    <!--</div>-->
                 </div>
                 </div>
-                <div class="opitme-right">
+                <div class="opitme-right" type="overflow-y: hidden;">
                  <ul class="opit_list">
                    <li class="opit_item">
                      <div class="opit_title">
@@ -123,17 +126,11 @@ http://venitul.ru/<!DOCTYPE html>
  </section>
  
 
-
-
-
-
-
-
-  <footer class="Rectangle">
+<footer class="Rectangle">
      <div class="container">
         <div class="footer-left">
         <div class="exit">
-           <p>&#9884;  Cайт сделан благодаря поддержке LoftSchool</p>
+           <p>&#9884;  Дизайн сайта был разработан в школе LoftSchool</p>
         </div>
         </div>
         <div class="footer-right">
@@ -158,7 +155,9 @@ http://venitul.ru/<!DOCTYPE html>
         </div>
         </div>
      </div>
-  </footer> 
+  </footer>
+</div>
+       
 </body>
 </html>
 
